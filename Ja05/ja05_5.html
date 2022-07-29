@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = "abc";
+
+        if(isNaN(num)){
+            document.write("num은 문자를 기억합니다.");
+        }else{
+            document.write("num은 숫자를 기억합니다.");
+        }
+
+        num = "4";
+        document.write("<br>num+1 = " + (parseInt(num) + 1));
+
+        num = "4.5";
+        document.write("<br>num+1 = " + (parseFloat(num) + 1));
+
+        num = "3+3+3";
+        document.write("<br>3+3+3 = " +  eval(num));
+    </script>
+</body>
+</html>

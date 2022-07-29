@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 1000px;
+            height: 1000px;
+        }
+
+        button{
+            position: fixed;
+        }
+    </style>
+</head>
+<body>
+    
+    <p>1번 라인입니다.</p>
+    <p>2번 라인입니다.</p>
+    <p>3번 라인입니다.</p>
+    <p>4번 라인입니다.</p>
+    <p>5번 라인입니다.</p>
+
+    <button onclick="scrollWin()">페이지를 이동</button>
+    <br><br>
+
+    <script>
+        function scrollWin(){
+            window.scrollBy(-10, -10);
+        }
+    </script>
+</body>
+</html>

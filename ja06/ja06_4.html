@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr1 = ["Banana", "Lemon", "Apple"];
+        var arr2 = ["119", "112", "114"];
+        var arr3 = [10,5,1,100,80];
+
+        document.write(arr1.length + "<br>");
+        document.write(arr2.length + "<br>");
+        document.write(arr3.length + "<br>");
+
+        var res = arr1.concat(arr2);
+        document.write(res + "<br>");
+        document.write(res.indexOf("112")+"<br>");
+
+        arr1.pop();
+        document.write(arr1 + "<br>");
+
+        arr1.push("Orange");
+        document.write(arr1 + "<br>");
+
+        document.write(arr1.reverse() + "<br>");
+
+        document.write(arr1.sort() + "<br>");
+
+        arr3.sort(function(a, b){return a-b});
+        document.write(arr3 + "<br>");
+    </script>
+</body>
+</html>

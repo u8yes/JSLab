@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var score = prompt("점수를 입력하세요!");
+        var num = (score - (score % 10)) / 10;
+        var good = score % 10;
+        document.write("score % 10 = "+ score % 10+ "<br>");
+        switch(num){
+            case 10:
+            case 9: 
+                document.write("<br>A 학점입니다.<br>");    
+                break;
+            case 8:
+                document.write("B 학점입니다.<br>");
+                break;
+            case 7:
+                document.write("C 학점입니다.<br>");
+                break;
+            case 6:
+                document.write("D 학점입니다.<br>");
+                break;
+            default:
+            document.write("F 학점입니다.<br>");
+                break;
+            
+        }
+        document.write("점수 : " + score);  // 05
+    </script>
+</body>
+</html>

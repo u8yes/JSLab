@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 body 노드의 모든 자식노드가 표시됩니다.</h3>
+    <select name="" id="selectList" size="4">
+        <option value="">빨간 사과</option>
+        <option value="">노란 바나나</option>
+        <option value="">블루베리</option>
+        <option value="">청포도</option>
+    </select><button onclick="childrenFunc()">클릭하세요</button>
+    <p id="here"></p>
+    <script>
+        function childrenFunc(){
+            var c = document.body.children;
+            var txt = "";
+            var i;
+            for(i = 0; i < c.length; i++){
+                txt = txt + c[i].tagName + "<br>";
+            }
+
+            document.getElementById("here").innerHTML = txt;
+
+        }
+    </script>
+</body>
+</html>
+

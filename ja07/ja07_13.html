@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>새 창 열기 버튼을 클릭한 후 창 이동하기 버튼을 클릭하세요.</h3>
+
+    <button onclick="winOpen()">새 창 열기</button>
+    <button onclick="winMove()">창 이동하기</button>
+
+    <script>
+        var winobj;
+
+        function winOpen(){
+            winobj=window.open("", "winsample", "top=200, left=200, width=200, height=100");
+            winobj.document.write("<p>예제 윈도우입니다</p>");
+        }
+
+        function winMove(){
+            winobj.moveTo(500, 500);
+            winobj.focus();
+        }
+    </script>
+</body>
+</html>

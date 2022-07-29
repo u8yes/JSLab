@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var secret = 7;
+        var count = 0;
+        var guess;
+
+        while(guess != secret){
+            guess = prompt("1-10 사이의 숫자를 입력하세요!");
+            document.write("입력한 값 : " + guess);
+            document.write("<br>");
+            count++;
+        }
+
+        document.write(count + "번만에 맞췄습니다!")
+    </script>
+</body>
+</html>

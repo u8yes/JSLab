@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var limit, num = 1, sum = 0, multi = 1;
+
+        limit = prompt("숫자를 입력하세요.");
+
+        do{
+            sum += num;
+            multi *= num;
+            num++;
+        }while(num <= limit);
+
+        document.write("합 = " + sum);
+        document.write("<br>곱 = " + multi);
+    </script>
+</body>
+</html>

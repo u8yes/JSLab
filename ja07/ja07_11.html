@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 새로운 윈도우가 표시됩니다.</h3>
+    <button onclick="winOpen()">클릭하세요</button>
+
+    <script>
+        function winOpen(){
+            window.open("http://www.pisibook.co.kr","_black", 
+            "toolbar=yes, scrollbars=yes, resizable=yes, top=100, left=100, width=400, height=400");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 2개의 알림 상자에 URL과 프로토콜이 표시됩니다.</h3>
+    <button onclick="pageURL()">클릭하세요</button>
+
+    <script>
+        function pageURL(){
+            alert("URL : " + location.href);
+            alert("프로토콜 : " + location.protocol);
+        }
+    </script>
+</body>
+</html>

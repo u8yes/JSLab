@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="sample">환영합니다!</h1>
+    <p>버튼을 클릭하면 버튼 아래에 문장이 표시됩니다.</p>
+    <button onclick="copyPara()">클릭하세요</button>
+
+    <p id="here"></p>
+
+    <script>
+        function copyPara(){
+            var x = document.getElementById("sample").innerHTML;
+            var x = document.getElementById("here").innerHTML = x;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>버튼을 클릭하면 이전 페이지로 돌아갑니다!</h3>
+    <button onclick="goBack()">이전 페이지</button>
+    <button onclick="go()">다음 페이지</button>
+
+    <script>
+        function goBack(){
+            history.back();
+            // history.go(1);
+        }
+        function go(){
+            // history.back();
+            history.go(1);
+        }
+    </script>
+</body>
+</html>
+
